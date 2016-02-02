@@ -20,6 +20,8 @@ public class ManagerStudents {
         Student oStudent = new Student();
         oStudent.inputStudent();
         
+        //hien thi danh sach sinh vien
+        oStudent.DisplayStudent();
     }
     
 }

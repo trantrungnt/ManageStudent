@@ -82,4 +82,15 @@ public class Student {
             System.out.println("Error!");
         }
     }
+    
+    public void DisplayStudent()
+    {
+        System.out.print("\n============================\n");
+        System.out.println(ID);
+        System.out.println(name);
+        System.out.println(age);
+        System.out.println(gender);
+        System.out.println(country);
+        System.out.println("\n");
+    }
 }
