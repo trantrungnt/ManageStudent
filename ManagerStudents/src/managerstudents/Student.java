@@ -53,7 +53,8 @@ public class Student {
         };
     }*/
     
-    public void inputStudent(){
+    //Phuong thuc nhap 1 sinh vien 
+    /*public void inputStudent(){
         BufferedReader oBufferedReader = new BufferedReader(new InputStreamReader(System.in));
         ID = 0;
         name = "";
@@ -81,9 +82,11 @@ public class Student {
         catch(Exception e){
             System.out.println("Error!");
         }
-    }
+    }*/
     
-    public void DisplayStudent()
+    
+    //Phuong thuc hien thi 1 sinh vien
+    /*public void DisplayStudent()
     {
         System.out.print("\n============================\n");
         System.out.println(ID);
@@ -92,5 +95,44 @@ public class Student {
         System.out.println(gender);
         System.out.println(country);
         System.out.println("\n");
+    }*/
+    
+    //Phuong thuc nhap danh sach sinh vien
+    public void inputStudent(){
+        BufferedReader oBufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        ID = 0;
+        name = "";
+        country = "";                
+        int n;        
+        
+        try{            
+            System.out.println("Nhap thong tin sinh vien");
+            System.out.print("\n+ n = ");
+            n = Integer.parseInt(oBufferedReader.readLine());
+            
+            for(int i = 0; i < n; i++)
+            {
+                System.out.print("\n+ Ma sinh vien: ");
+                ID = Integer.parseInt(oBufferedReader.readLine());
+            
+                System.out.print("\n + Ho va ten: ");
+                name = oBufferedReader.readLine();
+
+                System.out.print("\n + Gioi tinh: ");
+                gender = oBufferedReader.readLine();
+
+                System.out.print("\n+ Tuoi: ");
+                age = Integer.parseInt(oBufferedReader.readLine());
+
+                System.out.print("\n+ Que quan: ");
+                country = oBufferedReader.readLine();
+
+                System.out.print("\n========================\n");
+            }    
+
+        }
+        catch(Exception e){
+            System.out.println("Error!");
+        }
     }
 }

@@ -21,7 +21,7 @@ public class ManagerStudents {
         oStudent.inputStudent();
         
         //hien thi danh sach sinh vien
-        oStudent.DisplayStudent();
+       // oStudent.DisplayStudent();
     }
     
 }
