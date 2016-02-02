@@ -5,7 +5,9 @@
  */
 package managerstudents;
 
-import java.util.Scanner;
+//import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /**
  *
@@ -18,7 +20,7 @@ public class Student {
     int age;
     String gender;
     
-    public void inputStudent(){
+    /*public void inputStudent(){
         //khoi tao doi tuong Scanner
             Scanner oScanner = new Scanner(System.in);
             ID = 0;
@@ -43,9 +45,41 @@ public class Student {
             System.out.print("\n+ Que quan: ");
             country = oScanner.nextLine();
             
+            //System.out.printLn("========================");
+            
         }
         catch(Exception e){
             System.out.println("Error!");
         };
+    }*/
+    
+    public void inputStudent(){
+        BufferedReader oBufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        ID = 0;
+        name = "";
+        country = "";                
+        
+        try{
+            System.out.println("Nhap thong tin sinh vien");
+            System.out.print("\n+ Ma sinh vien: ");
+            ID = Integer.parseInt(oBufferedReader.readLine());
+            
+            System.out.print("\n + Ho va ten: ");
+            name = oBufferedReader.readLine();
+            
+            System.out.print("\n + Gioi tinh: ");
+            gender = oBufferedReader.readLine();
+            
+            System.out.print("\n+ Tuoi: ");
+            age = Integer.parseInt(oBufferedReader.readLine());
+            
+            System.out.print("\n+ Que quan: ");
+            country = oBufferedReader.readLine();
+            
+            System.out.print("\n========================\n");
+        }
+        catch(Exception e){
+            System.out.println("Error!");
+        }
     }
 }
