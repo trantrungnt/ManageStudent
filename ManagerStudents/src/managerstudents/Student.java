@@ -3,12 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package managerstudents;
+
 
 //import java.util.Scanner;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
+package managerstudents;
 /**
  *
  * @author TrungNT
@@ -20,119 +18,13 @@ public class Student {
     int age;
     String gender;
     
-    /*public void inputStudent(){
-        //khoi tao doi tuong Scanner
-            Scanner oScanner = new Scanner(System.in);
-            ID = 0;
-            name = "";
-            country = "";
-            
-        try{
-            System.out.println("Nhap thong tinh Sinh vien");                       
-            
-            System.out.print("\n+ Ma sinh vien: ");
-            ID = oScanner.nextInt();
-            
-            System.out.print("\n+ Ho va ten: ");            
-            name = oScanner.nextLine();
-            
-            System.out.print("\n+ Gioi tinh: ");
-            gender = oScanner.nextLine();
-            
-            System.out.print("\n+ Tuoi: ");
-            age = oScanner.nextInt();
-                                               
-            System.out.print("\n+ Que quan: ");
-            country = oScanner.nextLine();
-            
-            //System.out.printLn("========================");
-            
-        }
-        catch(Exception e){
-            System.out.println("Error!");
-        };
-    }*/
-    
-    //Phuong thuc nhap 1 sinh vien 
-    /*public void inputStudent(){
-        BufferedReader oBufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        ID = 0;
-        name = "";
-        country = "";                
-        
-        try{
-            System.out.println("Nhap thong tin sinh vien");
-            System.out.print("\n+ Ma sinh vien: ");
-            ID = Integer.parseInt(oBufferedReader.readLine());
-            
-            System.out.print("\n + Ho va ten: ");
-            name = oBufferedReader.readLine();
-            
-            System.out.print("\n + Gioi tinh: ");
-            gender = oBufferedReader.readLine();
-            
-            System.out.print("\n+ Tuoi: ");
-            age = Integer.parseInt(oBufferedReader.readLine());
-            
-            System.out.print("\n+ Que quan: ");
-            country = oBufferedReader.readLine();
-            
-            System.out.print("\n========================\n");
-        }
-        catch(Exception e){
-            System.out.println("Error!");
-        }
-    }*/
-    
-    
-    //Phuong thuc hien thi 1 sinh vien
-    /*public void DisplayStudent()
-    {
-        System.out.print("\n============================\n");
-        System.out.println(ID);
-        System.out.println(name);
-        System.out.println(age);
-        System.out.println(gender);
-        System.out.println(country);
-        System.out.println("\n");
-    }*/
-    
-    //Phuong thuc nhap danh sach sinh vien
-    public void inputStudent(){
-        BufferedReader oBufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        ID = 0;
-        name = "";
-        country = "";                
-        int n;        
-        
-        try{            
-            System.out.println("Nhap thong tin sinh vien");
-            System.out.print("\n+ n = ");
-            n = Integer.parseInt(oBufferedReader.readLine());
-            
-            for(int i = 0; i < n; i++)
-            {
-                System.out.print("\n+ Ma sinh vien: ");
-                ID = Integer.parseInt(oBufferedReader.readLine());
-            
-                System.out.print("\n + Ho va ten: ");
-                name = oBufferedReader.readLine();
-
-                System.out.print("\n + Gioi tinh: ");
-                gender = oBufferedReader.readLine();
-
-                System.out.print("\n+ Tuoi: ");
-                age = Integer.parseInt(oBufferedReader.readLine());
-
-                System.out.print("\n+ Que quan: ");
-                country = oBufferedReader.readLine();
-
-                System.out.print("\n========================\n");
-            }    
-
-        }
-        catch(Exception e){
-            System.out.println("Error!");
-        }
+    public void Student(){
+        this.ID = ID;
+        this.name = name;
+        this.gender = gender;
+        this.country = country;
+        this.age = age;
     }
+
+                        
 }
