@@ -69,6 +69,15 @@ public class StudentList {
         }
     }
     
+    //dinh nghia ham tinh tong diem
+    float sumScore(float math, float literature, float english)
+    {
+        float sumScore;
+        
+        sumScore = math + literature + english;
+        return sumScore;        
+    }
+    
     //dinh nghia Swap method de doi cho
     void Swap(float a, float b)
     {
