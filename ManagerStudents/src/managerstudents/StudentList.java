@@ -63,6 +63,9 @@ public class StudentList {
             System.out.println(oStudents[i].getGender());
             System.out.println(oStudents[i].getCountry());
             System.out.println("Toan: " + oStudents[i].getScore_math());
+            System.out.println("Van: " + oStudents[i].getScore_literature());
+            System.out.println("Anh: " + oStudents[i].score_english);
+            System.out.println("===");
         }
     }
     
