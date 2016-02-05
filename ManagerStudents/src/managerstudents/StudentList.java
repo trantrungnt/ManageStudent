@@ -87,9 +87,18 @@ public class StudentList {
             sumScore = sumScore(oStudents[i].getScore_math(),
                                 oStudents[i].getScore_literature(),
                                 oStudents[i].getScore_english());
-            System.out.println("+ Tong diem sinh vien co ma sinh vien " + oStudents[i].getID() + " la: " + sumScore);
+            System.out.println("+ Tong diem cua sinh vien co ma sinh vien " + oStudents[i].getID() + " la: " + sumScore);
         }
         
+    }
+    
+    //dinh nghia ham tinh tong diem trung binh cua sinh vien
+    float averageScore(float math, float literature, float english)
+    {
+        float averageScore;
+        
+        averageScore = (math + literature + english)/3;
+        return averageScore;        
     }
     
     //dinh nghia Swap method de doi cho
