@@ -17,6 +17,7 @@ public class Student {
     String country;
     int age;
     String gender;
+    float score_math;
     
     //dinh nghia ham khoi tao Contructor
     public void Student(){
@@ -25,6 +26,7 @@ public class Student {
         this.gender = gender;
         this.country = country;
         this.age = age;
+        this.score_math = score_math;
     }
 
     public int getID() {
@@ -45,5 +47,12 @@ public class Student {
 
     public String getCountry() {
         return country;
-    }                       
+    }          
+
+    public float getScore_math() {
+        return score_math;
+    }
+
+        
+    
 }

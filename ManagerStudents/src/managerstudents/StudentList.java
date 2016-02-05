@@ -36,6 +36,9 @@ public class StudentList {
                 
                 System.out.print("\n+ Que quan: ");
                 oStudents[i].country = oBufferedReader.readLine();
+                
+                System.out.print("\n+ Toan: ");
+                oStudents[i].score_math = Float.parseFloat(oBufferedReader.readLine());
             }
             
             
@@ -53,6 +56,7 @@ public class StudentList {
             System.out.println(oStudents[i].getAge());
             System.out.println(oStudents[i].getGender());
             System.out.println(oStudents[i].getCountry());
+            System.out.println("Toan: " + oStudents[i].getScore_math());
         }
     }
 }
