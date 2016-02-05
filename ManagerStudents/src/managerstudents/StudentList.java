@@ -22,8 +22,18 @@ public class StudentList {
                 oStudents[i] = new Student();
                 System.out.print("\n+ Ma sinh vien: ");
                 oStudents[i].ID = Integer.parseInt(oBufferedReader.readLine());
+                
                 System.out.print("\n+ Ho va ten: "); 
                 oStudents[i].name = oBufferedReader.readLine();
+                
+                System.out.print("\n+ Tuoi: ");
+                oStudents[i].age = Integer.parseInt(oBufferedReader.readLine());
+                
+                System.out.print("\n+ Gioi tinh: ");
+                oStudents[i].gender = oBufferedReader.readLine();
+                
+                System.out.print("\n+ Que quan: ");
+                oStudents[i].country = oBufferedReader.readLine();
             }
             
             
