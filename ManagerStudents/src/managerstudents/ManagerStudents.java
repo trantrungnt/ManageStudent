@@ -36,7 +36,8 @@ public class ManagerStudents {
             System.out.println("=============================");
             oStudentList.sumScoreStudent(oStudents, n);
             
-            
+            System.out.println("=============================");
+            oStudentList.averageScoreStudent(oStudents, n);
         }                
         catch(Exception e){
             System.out.println(e.toString());
