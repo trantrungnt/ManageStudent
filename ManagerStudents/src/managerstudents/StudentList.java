@@ -13,6 +13,8 @@ import java.io.InputStreamReader;
  * @author TrungNT
  */
 public class StudentList {
+    
+    //phuong thuc Nhap du lieu: danh sach n sinh vien 
     void inputStudent(Student[] oStudents, int n)
     {
          try{
@@ -40,5 +42,17 @@ public class StudentList {
         }catch(Exception e){
             System.out.println(e.toString());
         }               
+    }
+    
+    public void DisplayStudent(Student[] oStudents, int n)
+    {
+        for(int i=0; i<n; i++)
+        {           
+            System.out.println(oStudents[i].getID());
+            System.out.println(oStudents[i].getName());
+            System.out.println(oStudents[i].getAge());
+            System.out.println(oStudents[i].getGender());
+            System.out.println(oStudents[i].getCountry());
+        }
     }
 }

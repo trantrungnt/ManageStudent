@@ -30,6 +30,9 @@ public class ManagerStudents {
             StudentList oStudentList = new StudentList();
             oStudentList.inputStudent(oStudents, n);
             
+            System.out.println("=============================");
+            oStudentList.DisplayStudent(oStudents, n);
+            
             
         }                
         catch(Exception e){

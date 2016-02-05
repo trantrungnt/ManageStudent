@@ -27,5 +27,23 @@ public class Student {
         this.age = age;
     }
 
-                        
+    public int getID() {
+        return ID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public String getCountry() {
+        return country;
+    }                       
 }
