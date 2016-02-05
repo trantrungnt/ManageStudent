@@ -39,6 +39,12 @@ public class StudentList {
                 
                 System.out.print("\n+ Toan: ");
                 oStudents[i].score_math = Float.parseFloat(oBufferedReader.readLine());
+                
+                System.out.print("\n+ Van: ");
+                oStudents[i].score_literature = Float.parseFloat(oBufferedReader.readLine());
+                
+                System.out.print("\n+ Anh: ");
+                oStudents[i].score_english = Float.parseFloat(oBufferedReader.readLine());
             }
             
             
