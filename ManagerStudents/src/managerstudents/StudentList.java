@@ -78,6 +78,20 @@ public class StudentList {
         return sumScore;        
     }
     
+    //dinh nghia phuong thuc tinh tong diem tung sinh vien
+    public void sumScoreStudent(Student[] oStudents, int n)
+    {
+        float sumScore =0;
+        for(int i=0; i<n ; i++)
+        {
+            sumScore = sumScore(oStudents[i].getScore_math(),
+                                oStudents[i].getScore_literature(),
+                                oStudents[i].getScore_english());
+            System.out.println("+ Tong diem sinh vien co ma sinh vien " + oStudents[i].getID() + " la: " + sumScore);
+        }
+        
+    }
+    
     //dinh nghia Swap method de doi cho
     void Swap(float a, float b)
     {

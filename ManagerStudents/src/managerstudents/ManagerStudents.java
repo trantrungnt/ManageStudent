@@ -28,10 +28,13 @@ public class ManagerStudents {
             n = Integer.parseInt(oBufferedReader.readLine());                        
            
             StudentList oStudentList = new StudentList();
-            oStudentList.inputStudent(oStudents, n);
+            oStudentList.inputStudent(oStudents, n);                        
             
             System.out.println("=============================");
             oStudentList.DisplayStudent(oStudents, n);
+            
+            System.out.println("=============================");
+            oStudentList.sumScoreStudent(oStudents, n);
             
             
         }                
