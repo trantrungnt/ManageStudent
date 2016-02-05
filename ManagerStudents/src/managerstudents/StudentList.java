@@ -59,4 +59,14 @@ public class StudentList {
             System.out.println("Toan: " + oStudents[i].getScore_math());
         }
     }
+    
+    //dinh nghia Swap method de doi cho
+    void Swap(float a, float b)
+    {
+        float templ;
+        
+        templ = a;
+        a = b;
+        b = templ;
+    }
 }
