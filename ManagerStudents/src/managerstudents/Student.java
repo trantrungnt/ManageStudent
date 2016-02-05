@@ -18,6 +18,7 @@ public class Student {
     int age;
     String gender;
     
+    //dinh nghia ham khoi tao Contructor
     public void Student(){
         this.ID = ID;
         this.name = name;
