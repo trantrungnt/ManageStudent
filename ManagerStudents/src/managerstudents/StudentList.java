@@ -117,12 +117,12 @@ public class StudentList {
     }
     
     //dinh nghia Swap method de doi cho
-    void Swap(float a, float b)
+    void Swap(Student oStudentA, Student oStudentB)
     {
-        float templ;
+        Student templ;
         
-        templ = a;
-        a = b;
-        b = templ;
+        templ = oStudentA;
+        oStudentA = oStudentB;
+        oStudentB = templ;
     }
 }
