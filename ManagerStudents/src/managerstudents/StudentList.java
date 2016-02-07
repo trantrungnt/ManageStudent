@@ -117,14 +117,14 @@ public class StudentList {
     }
     
     //dinh nghia Swap method de doi cho
-    void Swap(Student oStudentA, Student oStudentB)
+    /*void Swap(Student oStudentA, Student oStudentB)
     {
         Student templ;
         
         templ = oStudentA;
         oStudentA = oStudentB;
         oStudentB = templ;
-    }
+    }*/
     
     public void BubbleSortStudent(Student[] oStudents, int n)
     {                       
@@ -146,4 +146,20 @@ public class StudentList {
         }
     }
     
+    public float max_sumScoreStudent(Student[] oStudents, int n)
+    {
+        float maxScore = sumScore(oStudents[0].getScore_math(), 
+                                  oStudents[0].getScore_literature(), 
+                                  oStudents[0].getScore_english());
+        
+        for(int i=0; i<n; i++ )            
+            if(maxScore<sumScore(oStudents[i].getScore_math(),
+                                oStudents[i].getScore_literature(),
+                                oStudents[i].getScore_english()))
+                maxScore = sumScore(oStudents[i].getScore_math(), 
+                                      oStudents[i].getScore_literature(), 
+                                      oStudents[i].getScore_english());
+        
+        return maxScore;            
+    }
 }
