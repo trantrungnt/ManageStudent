@@ -41,7 +41,7 @@ public class ManagerStudents {
             
             System.out.println("=============================");
             oStudentList.BubbleSortStudent(oStudents, n);
-            oStudentList.DisplayStudent(oStudents, n);
+            oStudentList.sumScoreStudent(oStudents, n);
         }                
         catch(Exception e){
             System.out.println(e.toString());
