@@ -46,6 +46,10 @@ public class ManagerStudents {
             System.out.println("=============================");
             System.out.print("\nSinh vien co tong diem cao nhat la: " + oStudentList.max_sumScoreStudent(oStudents, n));
             System.out.println();
+            
+            System.out.println("=============================");
+            System.out.print("\nSinh vien co tong diem nho nhat la: " + oStudentList.min_sumScoreStudent(oStudents, n));
+            System.out.println();
         }                
         catch(Exception e){
             System.out.println(e.toString());

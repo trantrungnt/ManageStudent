@@ -162,4 +162,21 @@ public class StudentList {
         
         return maxScore;            
     }
+    
+    public float min_sumScoreStudent(Student[] oStudents, int n)
+    {
+        float minScore = sumScore(oStudents[0].getScore_math(), 
+                                  oStudents[0].getScore_literature(), 
+                                  oStudents[0].getScore_english());
+        
+        for(int i=0; i<n; i++ )            
+            if(minScore>sumScore(oStudents[i].getScore_math(),
+                                oStudents[i].getScore_literature(),
+                                oStudents[i].getScore_english()))
+                minScore = sumScore(oStudents[i].getScore_math(), 
+                                      oStudents[i].getScore_literature(), 
+                                      oStudents[i].getScore_english());
+        
+        return minScore;            
+    }
 }
