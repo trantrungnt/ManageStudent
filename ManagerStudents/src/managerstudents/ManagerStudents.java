@@ -38,6 +38,10 @@ public class ManagerStudents {
             
             System.out.println("=============================");
             oStudentList.averageScoreStudent(oStudents, n);
+            
+            System.out.println("=============================");
+            oStudentList.BubbleSortStudent(oStudents, n);
+            oStudentList.DisplayStudent(oStudents, n);
         }                
         catch(Exception e){
             System.out.println(e.toString());

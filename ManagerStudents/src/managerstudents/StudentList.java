@@ -126,6 +126,18 @@ public class StudentList {
         oStudentB = templ;
     }
     
-    
+    public void BubbleSortStudent(Student[] oStudents, int n)
+    {             
+        for(int j=0; j<n; j++)
+        {            
+            for(int i=n-1; i>j; i--)
+                if(sumScore(oStudents[i].getScore_math(),
+                            oStudents[i].getScore_literature(),
+                            oStudents[i].getScore_english()) < sumScore(oStudents[i-1].getScore_math(),
+                                                                oStudents[i-1].getScore_literature(),
+                                                                oStudents[i-1].getScore_english()))
+                    Swap(oStudents[i], oStudents[i-1]);
+        }
+    }
     
 }
