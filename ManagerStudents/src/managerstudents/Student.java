@@ -63,8 +63,5 @@ public class Student {
 
     public float getScore_english() {
         return score_english;
-    }
-
-    
-            
+    }               
 }
